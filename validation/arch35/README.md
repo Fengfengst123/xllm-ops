@@ -11,8 +11,9 @@ The xllm-ops branch already contains the operator implementation:
 git clone --branch codex/gamma-add-rmsnorm-arch35 --single-branch \
   https://github.com/Fengfengst123/xllm-ops.git /workspace/xllm-ops
 cd /workspace/xllm-ops
-git rev-parse HEAD
-# Expected: e718f10146ea89a2b20e198e481a98a22e126a45
+git log --oneline --decorate -5
+git merge-base --is-ancestor 0ab5c2998cd5a30087a94dcb5211b2fe31b5741c HEAD
+test -f validation/arch35/direct_aclnn_bench.cpp
 ```
 
 The arch35 implementation itself is commit
