@@ -12,8 +12,12 @@ git clone --branch codex/gamma-add-rmsnorm-arch35 --single-branch \
   https://github.com/Fengfengst123/xllm-ops.git /workspace/xllm-ops
 cd /workspace/xllm-ops
 git rev-parse HEAD
-# Expected: 0ab5c2998cd5a30087a94dcb5211b2fe31b5741c
+# Expected: e718f10146ea89a2b20e198e481a98a22e126a45
 ```
+
+The arch35 implementation itself is commit
+`0ab5c2998cd5a30087a94dcb5211b2fe31b5741c`; later commits add only validation
+assets and instructions.
 
 The ops-nn validation tree is reconstructed from the public parent commit and
 the two patches in this directory:
