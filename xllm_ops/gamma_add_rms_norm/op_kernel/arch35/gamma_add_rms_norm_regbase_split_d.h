@@ -51,6 +51,7 @@ public:
         epsilon = tiling->epsilon;
         colBufferLength = tiling->colBuferLength;
         avgFactor = tiling->avgFactor;
+        addGammaOffset = tiling->addGammaOffset;
         rowWork = (GetBlockIdx() < GetBlockNum() - 1) ? blockFactor : numRow - (GetBlockNum() - 1) * blockFactor;
         xGm1.SetGlobalBuffer((__gm__ T*)x1 + GetBlockIdx() * blockFactor * numCol, rowWork * numCol);
         xGm2.SetGlobalBuffer((__gm__ T*)x2 + GetBlockIdx() * blockFactor * numCol, rowWork * numCol);
@@ -221,6 +222,9 @@ private:
     {
         CopyInGamma(colRepeat, calColNum);
         LocalTensor<T> gammaLocal = inQueueGamma.DeQue<T>();
+        if (addGammaOffset != 0U) {
+            AddGammaOffset(gammaLocal, calColNum);
+        }
         for (uint32_t row = 0; row < calRowNum; row++) {
             uint64_t offset = (rowRepeat * rowFactor + row) * numCol + colRepeat * ubFactor;
             CopyInX(offset, calColNum);
@@ -256,6 +260,21 @@ private:
             CopyOutX(rowRepeat * rowFactor + row, colRepeat, calColNum);
         }
         inQueueGamma.FreeTensor(gammaLocal);
+    }
+
+    __aicore__ inline void AddGammaOffset(LocalTensor<T>& gammaLocal, uint32_t elementNum)
+    {
+        if constexpr (is_same<T, bfloat16_t>::value) {
+            LocalTensor<float> gammaFp32 = xFp32Buf.Get<float>();
+            Cast(gammaFp32, gammaLocal, RoundMode::CAST_NONE, elementNum);
+            PipeBarrier<PIPE_V>();
+            Adds(gammaFp32, gammaFp32, static_cast<float>(1.0), elementNum);
+            PipeBarrier<PIPE_V>();
+            Cast(gammaLocal, gammaFp32, RoundMode::CAST_RINT, elementNum);
+        } else {
+            Adds(gammaLocal, gammaLocal, static_cast<T>(1.0), elementNum);
+        }
+        PipeBarrier<PIPE_V>();
     }
 
     __aicore__ inline void CopyOutY(uint32_t curRow, uint32_t curCol, uint32_t calColNum)
@@ -309,6 +328,7 @@ private:
     uint32_t rowFactor;
     float epsilon;
     float avgFactor;
+    uint32_t addGammaOffset{0};
     uint32_t rowWork{1};
 };
 } // namespace GammaAddRmsNorm

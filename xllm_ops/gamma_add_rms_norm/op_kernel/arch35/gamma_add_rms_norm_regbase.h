@@ -66,6 +66,7 @@ public:
         epsilon = tiling->epsilon;
         numColAlign = tiling->numColAlign;
         avgFactor = tiling->avgFactor;
+        addGammaOffset = tiling->addGammaOffset;
         rowWork = (GetBlockIdx() < GetBlockNum() - 1) ? blockFactor : numRow - (GetBlockNum() - 1) * blockFactor;
         uint64_t rstdUbSizeAlignSize = CeilAlign(rowFactor, static_cast<uint64_t>(VL_FP32)) * sizeof(float);
         uint16_t binaryAddQuotientLoop = (binAddQuotient + VL_FP32 - 1) / VL_FP32;
@@ -94,6 +95,9 @@ public:
     {
         CopyInGamma();
         LocalTensor<T> gammaLocal = inQueueGamma.DeQue<T>();
+        if (addGammaOffset != 0U) {
+            AddGammaOffset(gammaLocal, static_cast<uint32_t>(numCol));
+        }
         uint32_t rowLoopCount = CeilDiv(rowWork, rowFactor);
         for (uint32_t rowLoopIdx = 0; rowLoopIdx < rowLoopCount; rowLoopIdx++) {
             uint64_t rowLoopOffset = rowLoopIdx * rowFactor * numCol;
@@ -173,6 +177,21 @@ private:
                 DataCopy<float, StoreDist::DIST_NORM_B32>(xFp32Tmp + offset, xSum, pregLoop);
             }
         }
+    }
+
+    __aicore__ inline void AddGammaOffset(LocalTensor<T>& gammaLocal, uint32_t elementNum)
+    {
+        if constexpr (is_same<T, bfloat16_t>::value) {
+            LocalTensor<float> gammaFp32 = xFp32Buff.Get<float>();
+            Cast(gammaFp32, gammaLocal, RoundMode::CAST_NONE, elementNum);
+            PipeBarrier<PIPE_V>();
+            Adds(gammaFp32, gammaFp32, static_cast<float>(1.0), elementNum);
+            PipeBarrier<PIPE_V>();
+            Cast(gammaLocal, gammaFp32, RoundMode::CAST_RINT, elementNum);
+        } else {
+            Adds(gammaLocal, gammaLocal, static_cast<T>(1.0), elementNum);
+        }
+        PipeBarrier<PIPE_V>();
     }
 
     __aicore__ inline void CalculateY(
@@ -334,6 +353,7 @@ private:
     uint64_t binAddQuotient;
     float epsilon;
     float avgFactor;
+    uint32_t addGammaOffset{0};
     uint64_t rowWork{1};
 };
 } // namespace GammaAddRmsNorm

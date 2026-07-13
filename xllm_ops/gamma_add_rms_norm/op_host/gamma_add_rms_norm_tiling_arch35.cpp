@@ -113,6 +113,9 @@ ge::graphStatus TilingGammaAddRmsNormRegbase(gert::TilingContext* context)
     OP_CHECK_NULL_WITH_CONTEXT(context, attrs);
     const float* epsilon = attrs->GetFloat(0);
     OP_CHECK_NULL_WITH_CONTEXT(context, epsilon);
+    const bool* addGammaOffsetPtr = attrs->GetBool(1);
+    OP_CHECK_NULL_WITH_CONTEXT(context, addGammaOffsetPtr);
+    const uint32_t addGammaOffset = *addGammaOffsetPtr ? 1U : 0U;
     OP_CHECK_IF(
         *epsilon < 0,
         OP_LOGE_FOR_INVALID_VALUE_WITH_REASON(context->GetNodeName(), "epsilon", std::to_string(*epsilon).c_str(),
@@ -192,6 +195,7 @@ ge::graphStatus TilingGammaAddRmsNormRegbase(gert::TilingContext* context)
         tiling.set_binAddQuotient(binAddQuotient);
         tiling.set_epsilon(*epsilon);
         tiling.set_avgFactor(avgFactor);
+        tiling.set_addGammaOffset(addGammaOffset);
         OP_LOGI(
             context,
             "TilingData numCore: %u, ubSize: %lu, numRow: %u, numCol: %u, numColAlign: %u, "
@@ -232,6 +236,7 @@ ge::graphStatus TilingGammaAddRmsNormRegbase(gert::TilingContext* context)
         tiling.set_colBuferLength(colBuferLength);
         tiling.set_multiNNum(multiNNum);
         tiling.set_isNddma(isNddma);
+        tiling.set_addGammaOffset(addGammaOffset);
         OP_LOGI(
             context,
             "TilingData numCore: %u, ubSize: %lu, numRow: %u, numCol: %u, numColAlign: %u, colBuferLength: %u, "

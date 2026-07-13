@@ -54,6 +54,7 @@ TILING_DATA_FIELD_DEF(uint32_t, ubLoop);
 TILING_DATA_FIELD_DEF(uint32_t, colBuferLength);
 TILING_DATA_FIELD_DEF(uint32_t, multiNNum);
 TILING_DATA_FIELD_DEF(uint32_t, isNddma);
+TILING_DATA_FIELD_DEF(uint32_t, addGammaOffset);
 END_TILING_DATA_DEF;
 
 BEGIN_TILING_DATA_DEF(GammaAddRMSNormRegbaseRFullLoadTilingData)
@@ -65,6 +66,7 @@ TILING_DATA_FIELD_DEF(uint64_t, rowFactor);
 TILING_DATA_FIELD_DEF(uint64_t, binAddQuotient);
 TILING_DATA_FIELD_DEF(float, epsilon);
 TILING_DATA_FIELD_DEF(float, avgFactor);
+TILING_DATA_FIELD_DEF(uint32_t, addGammaOffset);
 END_TILING_DATA_DEF;
 
 struct GammaAddRmsNormCompileInfo {
