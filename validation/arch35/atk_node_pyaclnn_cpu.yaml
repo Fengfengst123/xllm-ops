@@ -1,0 +1,8 @@
+nodes:
+  - backend: pyaclnn
+    task: [accuracy]
+    devices: [0]
+    run_modes: []
+  - backend: cpu
+    task: [accuracy]
+    run_modes: []
