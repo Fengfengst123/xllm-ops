@@ -38,6 +38,9 @@ Expected commits after applying the patches:
 b3a3c8170b feat(norm): add GammaAddRmsNorm custom op
 ```
 
+`git am` may create different commit IDs because committer metadata changes;
+the two commit subjects and changed files are the required checks.
+
 ## Build xllm-ops
 
 Load the CANN environment first and verify that its compiler accepts
@@ -83,6 +86,18 @@ bash build.sh -u --ophost --ops=gamma_add_rms_norm --soc=ascend950 -j16 \
 ```
 
 ## ATK accuracy
+
+Confirm ATK is installed before running accuracy:
+
+```bash
+command -v atk
+python3 -m pip show ATK
+```
+
+The known working ATK package reports `Name: ATK` and provides `atk case` and
+`atk task`. If it is absent, install the ATK wheel supplied with the Ascend 950
+validation environment or CANN test toolchain. Do not replace the ATK run with
+static checks.
 
 The committed fixed matrix contains 240 cases: 120 with gamma offset enabled
 and 120 disabled. It covers FP16, BF16 and FP32 and is preferred for a
