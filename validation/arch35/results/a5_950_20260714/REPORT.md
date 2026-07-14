@@ -42,7 +42,7 @@ xllm-ops 独立构建 ascend950 算子包（kernel + host + op-api），在 A5 (
 - 全部半精度 (FP16 13 + BF16 21), FP32 零失败
 - 失败原因: MARE 超 ATK 默认阈值 1/128 (0.009765625), 实际值 0.0100~0.0238
 - y MARE: max=2.38e-2, mean=5.22e-3; rstd MARE: max=2.85e-3, mean=1.59e-4
-- 非算子 bug: direct_aclnn_bench 验证 GammaAddRmsNorm(true) 与旧链路 Add+AddRmsNorm 在相同输入上 max_abs=0; FP32 全通过
+- 非算子 bug: (1) direct_aclnn_bench max_abs=0; (2) 双标杆对比 34/34 verdict 一致 (见 dual_benchmark_34.csv); FP32 全通过
 
 ## 性能 (msprof device task duration, xllm-ops 自建包, BF16)
 | shape | Add(us) | AddRmsNorm(us) | old_chain(us) | GammaAddRmsNorm(us) | speedup | reduction |

@@ -46,6 +46,8 @@ Build exit code: 0. See build/sha256_manifest.txt for artifact hashes.
 | msprof/legacy_opsnn/op_summary_1x5120.csv | op_summary for 1x5120 (legacy) | ops-nn package |
 | msprof/legacy_opsnn/op_summary_31x5120.csv | op_summary for 31x5120 (legacy) | ops-nn package |
 | patches/*.diff | All fix patches with root-cause READMEs | - |
+| atk_accuracy/dual_benchmark_34.csv | 34-case dual benchmark (gamma vs old chain, same input) | xllm-ops package |
+| atk_accuracy/dual_benchmark_34_README.md | Dual benchmark report (34/34 verdict match) | - |
 
 ## Notes
 - atk_accuracy_a5.log contains GAMMA_OPAPI_FALLBACK line proving aclnnGammaAddRmsNorm

@@ -1,0 +1,35 @@
+case_id,dtype,offset,shape,gamma_y_mare,gamma_rstd_mare,gamma_y_verdict,gamma_rstd_verdict,gamma_all_verdict,oldchain_y_mare,oldchain_rstd_mare,oldchain_y_verdict,oldchain_rstd_verdict,oldchain_all_verdict,verdict_match
+0,fp16,True,[1],0.000000e+00,5.710045e-05,Pass,Pass,Pass,0.000000e+00,5.710045e-05,Pass,Pass,Pass,MATCH
+2,fp16,True,[1],0.000000e+00,1.394814e-05,Pass,Pass,Pass,0.000000e+00,1.394814e-05,Pass,Pass,Pass,MATCH
+4,bf16,True,[1],0.000000e+00,2.025926e-04,Pass,Pass,Pass,0.000000e+00,2.025926e-04,Pass,Pass,Pass,MATCH
+12,fp16,True,"[2, 3, 4]",9.615385e-04,3.478668e-04,Pass,Pass,Pass,9.615385e-04,3.478668e-04,Pass,Pass,Pass,MATCH
+14,fp16,True,"[2, 3, 4]",8.912656e-04,3.439763e-04,Pass,Pass,Pass,8.912656e-04,3.439763e-04,Pass,Pass,Pass,MATCH
+15,fp16,False,"[2, 3, 4]",0.000000e+00,2.425199e-04,Pass,Pass,Pass,0.000000e+00,2.425199e-04,Pass,Pass,Pass,MATCH
+16,bf16,True,"[2, 3, 4]",7.462686e-03,3.185473e-03,Pass,Pass,Pass,7.462686e-03,3.185473e-03,Pass,Pass,Pass,MATCH
+17,bf16,False,"[2, 3, 4]",0.000000e+00,2.235059e-03,Pass,Pass,Pass,0.000000e+00,2.235059e-03,Pass,Pass,Pass,MATCH
+18,bf16,True,"[2, 3, 4]",6.666667e-03,3.018935e-03,Pass,Pass,Pass,6.666667e-03,3.018935e-03,Pass,Pass,Pass,MATCH
+19,bf16,False,"[2, 3, 4]",0.000000e+00,2.948818e-03,Pass,Pass,Pass,0.000000e+00,2.948818e-03,Pass,Pass,Pass,MATCH
+24,fp16,True,"[2, 3, 4]",8.032467e-01,8.032054e-01,Fail,Fail,Fail,8.032467e-01,8.032054e-01,Fail,Fail,Fail,MATCH
+25,fp16,False,"[2, 3, 4]",3.569652e-01,3.568231e-01,Fail,Fail,Fail,3.569652e-01,3.568231e-01,Fail,Fail,Fail,MATCH
+28,bf16,True,"[2, 3, 4]",5.055556e-01,5.063312e-01,Fail,Fail,Fail,5.055556e-01,5.063312e-01,Fail,Fail,Fail,MATCH
+29,bf16,False,"[2, 3, 4]",4.739583e-01,4.732641e-01,Fail,Fail,Fail,4.739583e-01,4.732641e-01,Fail,Fail,Fail,MATCH
+30,bf16,True,"[2, 3, 4]",3.081761e-01,3.088273e-01,Fail,Fail,Fail,3.081761e-01,3.088273e-01,Fail,Fail,Fail,MATCH
+31,bf16,False,"[2, 3, 4]",5.059289e-01,5.049931e-01,Fail,Fail,Fail,5.059289e-01,5.049931e-01,Fail,Fail,Fail,MATCH
+40,bf16,True,"[8, 128]",7.692308e-03,2.930635e-03,Pass,Pass,Pass,7.692308e-03,2.930635e-03,Pass,Pass,Pass,MATCH
+41,bf16,False,"[8, 128]",0.000000e+00,1.999123e-03,Pass,Pass,Pass,0.000000e+00,1.999123e-03,Pass,Pass,Pass,MATCH
+42,bf16,True,"[8, 128]",7.812500e-03,2.493210e-03,Fail,Pass,Fail,7.812500e-03,2.493210e-03,Fail,Pass,Fail,MATCH
+43,bf16,False,"[8, 128]",0.000000e+00,2.411481e-03,Pass,Pass,Pass,0.000000e+00,2.411481e-03,Pass,Pass,Pass,MATCH
+76,bf16,True,"[128, 128]",7.812500e-03,3.302107e-03,Fail,Pass,Fail,7.812500e-03,3.302107e-03,Fail,Pass,Fail,MATCH
+77,bf16,False,"[128, 128]",0.000000e+00,3.443856e-03,Pass,Pass,Pass,0.000000e+00,3.443856e-03,Pass,Pass,Pass,MATCH
+78,bf16,True,"[128, 128]",7.812500e-03,2.554019e-03,Fail,Pass,Fail,7.812500e-03,2.554019e-03,Fail,Pass,Fail,MATCH
+79,bf16,False,"[128, 128]",0.000000e+00,2.329957e-03,Pass,Pass,Pass,0.000000e+00,2.329957e-03,Pass,Pass,Pass,MATCH
+87,fp16,False,"[2, 8192]",7.434944e-04,2.428958e-04,Pass,Pass,Pass,7.434944e-04,2.428958e-04,Pass,Pass,Pass,MATCH
+100,bf16,True,"[7, 21, 16, 9]",6.307340e-01,6.290521e-01,Fail,Fail,Fail,6.307340e-01,6.290521e-01,Fail,Fail,Fail,MATCH
+101,bf16,False,"[7, 21, 16, 9]",6.434109e-01,6.411163e-01,Fail,Fail,Fail,6.434109e-01,6.411163e-01,Fail,Fail,Fail,MATCH
+102,bf16,True,"[7, 21, 16, 9]",7.339901e-01,7.298719e-01,Fail,Fail,Fail,7.339901e-01,7.298719e-01,Fail,Fail,Fail,MATCH
+103,bf16,False,"[7, 21, 16, 9]",6.810345e-01,6.803320e-01,Fail,Fail,Fail,6.810345e-01,6.803320e-01,Fail,Fail,Fail,MATCH
+135,fp16,False,"[2, 3, 5120]",9.233610e-04,2.017350e-04,Pass,Pass,Pass,9.233610e-04,2.017350e-04,Pass,Pass,Pass,MATCH
+207,fp16,False,"[31, 7168]",7.961784e-04,2.928528e-04,Pass,Pass,Pass,7.961784e-04,2.928528e-04,Pass,Pass,Pass,MATCH
+217,fp16,False,"[64, 4096]",9.727626e-04,3.891173e-04,Pass,Pass,Pass,9.727626e-04,3.891173e-04,Pass,Pass,Pass,MATCH
+229,fp16,False,"[512, 5120]",9.746589e-04,4.021140e-04,Pass,Pass,Pass,9.746589e-04,4.021140e-04,Pass,Pass,Pass,MATCH
+231,fp16,False,"[512, 5120]",9.680542e-04,3.007080e-04,Pass,Pass,Pass,9.680542e-04,3.007080e-04,Pass,Pass,Pass,MATCH
