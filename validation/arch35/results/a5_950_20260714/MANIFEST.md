@@ -57,3 +57,15 @@ Build exit code: 0. See build/sha256_manifest.txt for artifact hashes.
 - msprof/ has 4 xllm-ops op_summary CSVs + 3 legacy ops-nn CSVs in legacy_opsnn/.
 - ATK dynamic performance (30 shapes) was run with the ops-nn package; the op_summary
   evidence for xllm-ops is the 4-shape msprof above.
+
+## Additional files (parity commit)
+
+| File | Purpose |
+|---|---|
+| atk_accuracy/atk_accuracy_parity_240.csv | 240-case verdict/MARE parity comparison |
+| atk_accuracy/atk_accuracy_parity_README.md | Parity report (240/240 match, identical fail sets) |
+| atk_accuracy/old_chain_accuracy_executor.py | Old chain ATK executor plugin |
+| atk_accuracy/old_chain_240_compat.json | 240-case JSON for old chain |
+| atk_accuracy/nodes_npu_cpu.yaml | Nodes config for old chain run |
+| atk_accuracy/atk_oldchain_240.log | Old chain 240-case ATK log |
+| atk_accuracy/oldchain_accuracy_reports.xlsx | Old chain ATK Excel report |
