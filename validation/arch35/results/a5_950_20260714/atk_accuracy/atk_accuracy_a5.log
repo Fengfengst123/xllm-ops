@@ -1,0 +1,2227 @@
+/workspace/venv/lib/python3.12/site-packages/click/core.py:1307: UserWarning: The parameter -bmo is used more than once. Remove its duplicate as parameters should be unique.
+  parser = self.make_parser(ctx)
+/workspace/venv/lib/python3.12/site-packages/click/core.py:1307: UserWarning: The parameter --bm_output_path is used more than once. Remove its duplicate as parameters should be unique.
+  parser = self.make_parser(ctx)
+/workspace/venv/lib/python3.12/site-packages/click/core.py:1300: UserWarning: The parameter -bmo is used more than once. Remove its duplicate as parameters should be unique.
+  self.parse_args(ctx, args)
+/workspace/venv/lib/python3.12/site-packages/click/core.py:1300: UserWarning: The parameter --bm_output_path is used more than once. Remove its duplicate as parameters should be unique.
+  self.parse_args(ctx, args)
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mbase.py[0m:[1;36m206[0m]  [1m[34mtask_output_path: /workspace/atk_accuracy_a5/atk_output/atk_aclnnGammaAddRmsNorm_full_compat_2026-07-14-21-29-15-893202[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mbase.py[0m:[1;36m178[0m]  [1m[34mstart atk task: namespace(case='/workspace/atk_accuracy_a5/atk_aclnnGammaAddRmsNorm_full_compat.json', nodes='/workspace/xllm-ops/validation/arch35/atk_node_pyaclnn_cpu.yaml', plugin_path='/workspace/ops-nn/norm/gamma_add_rms_norm/tests/st/aclnnGammaAddRmsNorm', task=['accuracy'], max_task=1, log='info', bind_cpu_type=<BindCpuCoresType.NOT_BIND: '0'>, fast_case=None, save_data=None, start=None, end=None, white_list=None, black_list=None, random_nums=None, random_align_32b_nums=None, bm_device=<BenchmarkDevice.CPU: 'cpu'>, timeout=None, trace=False, db_timeout=None, bm_output_path=None, boundary_filter='default', keyword_filter=None, cpp_func_signature_type_path=False, input_data=None, nodes_list={})[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env ASCEND_TOOLKIT_HOME = /usr/local/Ascend/cann-9.1.0-beta.1[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env ASCEND_CUSTOM_OPP_PATH = /usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math:/workspace/install_gamma_a5/vendors/custom_xllm_math_nn:[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env ASCEND_OPP_PATH = /usr/local/Ascend/cann-9.1.0-beta.1/opp[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env GAMMA_OPAPI_LIB = /usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math/op_api/lib/libcust_opapi.so[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m107[0m]  [1m[34maclnn_gamma_add_rms_norm is already registered, repeated registration will coverage it, new module path is executor_aclnnGammaAddRmsNorm[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m203[0m]  [1m[34mModule 'aclnn_gamma_add_rms_norm' (class: FunctionRmsNormGradApi) has been registered from /workspace/ops-nn/norm/gamma_add_rms_norm/tests/st/aclnnGammaAddRmsNorm/executor_aclnnGammaAddRmsNorm.py.[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m107[0m]  [1m[34msample_aclnn_api is already registered, repeated registration will coverage it, new module path is executor_aclnnGammaAddRmsNorm[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m203[0m]  [1m[34mModule 'sample_aclnn_api' (class: SampleAclnnApi) has been registered from /workspace/ops-nn/norm/gamma_add_rms_norm/tests/st/aclnnGammaAddRmsNorm/executor_aclnnGammaAddRmsNorm.py.[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[WARNING][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m182[0m]  [1m[33mBase class not found in module from /workspace/ops-nn/norm/gamma_add_rms_norm/tests/st/aclnnGammaAddRmsNorm/generate_gamma_add_rms_norm.py for mode 'Api': module 'generate_gamma_add_rms_norm' has no attribute 'BaseApi'[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m78[0m]  [1m[34maclnn_gamma_add_rms_norm is already registered, repeated registration will coverage it, new module path is executor_aclnnGammaAddRmsNorm[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m78[0m]  [1m[34msample_aclnn_api is already registered, repeated registration will coverage it, new module path is executor_aclnnGammaAddRmsNorm[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[WARNING][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m182[0m]  [1m[33mBase class not found in module from /workspace/ops-nn/norm/gamma_add_rms_norm/tests/st/aclnnGammaAddRmsNorm/executor_aclnnGammaAddRmsNorm.py for mode 'Data': module 'executor_aclnnGammaAddRmsNorm' has no attribute 'BaseDataType'[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m78[0m]  [1m[34mgamma_add_rms_norm_full is already registered, repeated registration will coverage it, new module path is generate_gamma_add_rms_norm[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[WARNING][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mregistry.py[0m:[1;36m182[0m]  [1m[33mBase class not found in module from /workspace/ops-nn/norm/gamma_add_rms_norm/tests/st/aclnnGammaAddRmsNorm/generate_gamma_add_rms_norm.py for mode 'Data': module 'generate_gamma_add_rms_norm' has no attribute 'BaseDataType'[0m[0m
+[1;36m[2026-07-14 13:29:16][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@create_dataset][0m [1;36m[241060][0m [[1;36mworker_manager.py[0m:[1;36m67[0m]  [1m[34mstart run {'queues': '127.0.0.1:9090@create_dataset', 'pool': 'prefork', 'concurrency': 4, 'autoscale': '4,4', 'prefetch_multiplier': 16}[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241062][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241064][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241066][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241068][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mworker_manager.py[0m:[1;36m67[0m]  [1m[34mstart run {'queues': '127.0.0.1:9090@device_run_0', 'pool': 'solo', 'concurrency': 1, 'autoscale': '1,1', 'prefetch_multiplier': 16}[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@cpu_run][0m [1;36m[241078][0m [[1;36mworker_manager.py[0m:[1;36m67[0m]  [1m[34mstart run {'queues': '127.0.0.1:9090@cpu_run', 'pool': 'prefork', 'concurrency': 4, 'autoscale': '4,4', 'prefetch_multiplier': 16}[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@compare][0m [1;36m[241093][0m [[1;36mworker_manager.py[0m:[1;36m67[0m]  [1m[34mstart run {'queues': '127.0.0.1:9090@compare', 'pool': 'prefork', 'concurrency': 4, 'autoscale': '4,4', 'prefetch_multiplier': 16}[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241095][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241097][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241099][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241101][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env CELERY_LOG_LEVEL = 30[0m[0m
+[1;36m[2026-07-14 13:29:17][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mmain.py[0m:[1;36m409[0m]  [1m[34mcreate_tasks start!!!, case_config_name:GammaAddRmsNorm, all_cases_num: 240[0m[0m
+ATK任务进度:   0%|          | 0/240 [00:00<?, ?it/s][1;36m[2026-07-14 13:29:18][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+ATK任务进度:   0%|          | 0/240 [00:01<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:02<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:03<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:04<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:05<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:06<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:07<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:08<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:09<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:10<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:11<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:12<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:13<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:14<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:15<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:16<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:17<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:18<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:19<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:20<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:21<?, ?it/s]ATK任务进度:   0%|          | 0/240 [00:22<?, ?it/s][1;36m[2026-07-14 13:29:40][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mpatch_getenv.py[0m:[1;36m15[0m]  [1m[34mget env ASCEND_RT_VISIBLE_DEVICES = 4[0m[0m
+[1;36m[2026-07-14 13:29:40][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:40][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mlib_manager.py[0m:[1;36m99[0m]  [1m[34m[GAMMA_OPAPI_FALLBACK] binding aclnnGammaAddRmsNorm[GetWorkspaceSize] from custom lib: GAMMA_OPAPI_LIB=/usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math/op_api/lib/libcust_opapi.so abs=/usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math/op_api/lib/libcust_opapi.so realpath=/usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math/op_api/lib/libcust_opapi.so[0m[0m
+ATK任务进度:   0%|          | 0/240 [00:23<?, ?it/s][1;36m[2026-07-14 13:29:41][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+ATK任务进度:   0%|          | 0/240 [00:24<?, ?it/s][1;36m[2026-07-14 13:29:41][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_0   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+[1;36m[2026-07-14 13:29:42][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+ATK任务进度:   0%|          | 1/240 [00:25<04:05,  1.03s/it][1;36m[2026-07-14 13:29:43][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:43][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_1   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   1%|          | 2/240 [00:26<04:02,  1.02s/it][1;36m[2026-07-14 13:29:44][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:45][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:45][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_2   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   1%|▏         | 3/240 [00:28<05:49,  1.47s/it][1;36m[2026-07-14 13:29:46][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:47][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:47][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_3   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   2%|▏         | 4/240 [00:30<06:37,  1.69s/it][1;36m[2026-07-14 13:29:48][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:48][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_4   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   2%|▏         | 5/240 [00:31<05:38,  1.44s/it][1;36m[2026-07-14 13:29:49][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:50][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:50][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_5   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   2%|▎         | 6/240 [00:33<06:22,  1.64s/it][1;36m[2026-07-14 13:29:51][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:52][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:52][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_6   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   3%|▎         | 7/240 [00:35<06:49,  1.76s/it][1;36m[2026-07-14 13:29:53][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:54][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:54][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_7   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   3%|▎         | 8/240 [00:37<07:07,  1.84s/it][1;36m[2026-07-14 13:29:55][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:56][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:56][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_8   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   4%|▍         | 9/240 [00:39<07:17,  1.89s/it][1;36m[2026-07-14 13:29:57][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:57][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:57][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|    id_9   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   4%|▍         | 10/240 [00:40<06:13,  1.62s/it][1;36m[2026-07-14 13:29:58][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:58][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:58][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_10   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   5%|▍         | 11/240 [00:41<05:28,  1.44s/it][1;36m[2026-07-14 13:29:59][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:59][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:29:59][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_11   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   5%|▌         | 12/240 [00:42<04:57,  1.31s/it][1;36m[2026-07-14 13:30:00][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:00][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:01][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_12   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   5%|▌         | 13/240 [00:44<05:45,  1.52s/it][1;36m[2026-07-14 13:30:02][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:02][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:03][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_13   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   6%|▌         | 14/240 [00:46<06:17,  1.67s/it][1;36m[2026-07-14 13:30:04][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:04][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:05][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_14   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   6%|▋         | 15/240 [00:48<06:39,  1.77s/it][1;36m[2026-07-14 13:30:06][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:06][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:07][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_15   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   7%|▋         | 16/240 [00:50<06:53,  1.85s/it][1;36m[2026-07-14 13:30:08][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:08][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:09][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_16   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   7%|▋         | 17/240 [00:52<07:03,  1.90s/it][1;36m[2026-07-14 13:30:10][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:10][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:11][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_17   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   8%|▊         | 18/240 [00:54<07:08,  1.93s/it][1;36m[2026-07-14 13:30:12][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:13][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:13][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_18   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   8%|▊         | 19/240 [00:56<07:12,  1.96s/it][1;36m[2026-07-14 13:30:14][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:15][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:16][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:16][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_19   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:   8%|▊         | 20/240 [00:59<08:20,  2.27s/it][1;36m[2026-07-14 13:30:17][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:17][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_20   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   9%|▉         | 21/240 [01:00<06:54,  1.89s/it][1;36m[2026-07-14 13:30:18][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:19][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:19][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_21   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:   9%|▉         | 22/240 [01:02<07:00,  1.93s/it][1;36m[2026-07-14 13:30:20][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:21][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:22][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_22   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  10%|▉         | 23/240 [01:05<08:09,  2.26s/it][1;36m[2026-07-14 13:30:23][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:24][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:24][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_23   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  10%|█         | 24/240 [01:07<07:51,  2.18s/it][1;36m[2026-07-14 13:30:25][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:26][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:26][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_24   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  10%|█         | 25/240 [01:09<07:38,  2.13s/it][1;36m[2026-07-14 13:30:27][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:28][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:28][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_25   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  11%|█         | 26/240 [01:11<07:28,  2.10s/it][1;36m[2026-07-14 13:30:29][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:30][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:30][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_26   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  11%|█▏        | 27/240 [01:13<07:21,  2.07s/it][1;36m[2026-07-14 13:30:31][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:32][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:32][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_27   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  12%|█▏        | 28/240 [01:15<07:15,  2.05s/it][1;36m[2026-07-14 13:30:33][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:34][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:34][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_28   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  12%|█▏        | 29/240 [01:17<07:10,  2.04s/it][1;36m[2026-07-14 13:30:35][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:36][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:36][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_29   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  12%|█▎        | 30/240 [01:19<07:06,  2.03s/it][1;36m[2026-07-14 13:30:37][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:37][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:37][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_30   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  13%|█▎        | 31/240 [01:20<06:00,  1.72s/it][1;36m[2026-07-14 13:30:38][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:38][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:38][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_31   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  13%|█▎        | 32/240 [01:21<05:13,  1.51s/it][1;36m[2026-07-14 13:30:39][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:39][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:40][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_32   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  14%|█▍        | 33/240 [01:23<05:43,  1.66s/it][1;36m[2026-07-14 13:30:41][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:41][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:42][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_33   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  14%|█▍        | 34/240 [01:25<06:03,  1.76s/it][1;36m[2026-07-14 13:30:43][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:43][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:44][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_34   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  15%|█▍        | 35/240 [01:27<06:17,  1.84s/it][1;36m[2026-07-14 13:30:45][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:45][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:47][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:47][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_35   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  15%|█▌        | 36/240 [01:30<07:26,  2.19s/it][1;36m[2026-07-14 13:30:48][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:48][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_36   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  15%|█▌        | 37/240 [01:31<06:13,  1.84s/it][1;36m[2026-07-14 13:30:49][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:50][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:50][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_37   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  16%|█▌        | 38/240 [01:33<06:21,  1.89s/it][1;36m[2026-07-14 13:30:51][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:52][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:53][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_38   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  16%|█▋        | 39/240 [01:35<06:27,  1.93s/it][1;36m[2026-07-14 13:30:53][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:54][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:55][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_39   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  17%|█▋        | 40/240 [01:37<06:30,  1.95s/it][1;36m[2026-07-14 13:30:55][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:56][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:57][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_40   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  17%|█▋        | 41/240 [01:39<06:31,  1.97s/it][1;36m[2026-07-14 13:30:57][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:58][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:30:59][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_41   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  18%|█▊        | 42/240 [01:41<06:32,  1.98s/it][1;36m[2026-07-14 13:30:59][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:00][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:01][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_42   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  18%|█▊        | 43/240 [01:43<06:32,  1.99s/it][1;36m[2026-07-14 13:31:01][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:02][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:03][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_43   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  18%|█▊        | 44/240 [01:45<06:31,  2.00s/it][1;36m[2026-07-14 13:31:03][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:04][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:05][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_44   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  19%|█▉        | 45/240 [01:47<06:30,  2.00s/it][1;36m[2026-07-14 13:31:05][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:06][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:07][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_45   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  19%|█▉        | 46/240 [01:49<06:28,  2.00s/it][1;36m[2026-07-14 13:31:07][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:08][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:09][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_46   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  20%|█▉        | 47/240 [01:51<06:27,  2.01s/it][1;36m[2026-07-14 13:31:09][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:10][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:11][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_47   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  20%|██        | 48/240 [01:53<06:25,  2.01s/it][1;36m[2026-07-14 13:31:11][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:12][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:13][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_48   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  20%|██        | 49/240 [01:55<06:23,  2.01s/it][1;36m[2026-07-14 13:31:13][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:14][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:15][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_49   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  21%|██        | 50/240 [01:57<06:21,  2.01s/it][1;36m[2026-07-14 13:31:15][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:16][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:17][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_50   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  21%|██▏       | 51/240 [01:59<06:19,  2.01s/it][1;36m[2026-07-14 13:31:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:18][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:19][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_51   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  22%|██▏       | 52/240 [02:01<06:18,  2.01s/it][1;36m[2026-07-14 13:31:19][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:20][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:21][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_52   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  22%|██▏       | 53/240 [02:03<06:16,  2.01s/it][1;36m[2026-07-14 13:31:21][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:22][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:23][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_53   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  22%|██▎       | 54/240 [02:05<06:14,  2.01s/it][1;36m[2026-07-14 13:31:23][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:24][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:25][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_54   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  23%|██▎       | 55/240 [02:07<06:12,  2.01s/it][1;36m[2026-07-14 13:31:25][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:26][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:27][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_55   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  23%|██▎       | 56/240 [02:09<06:10,  2.01s/it][1;36m[2026-07-14 13:31:27][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:28][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:29][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_56   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  24%|██▍       | 57/240 [02:11<06:08,  2.01s/it][1;36m[2026-07-14 13:31:29][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:30][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:30][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_57   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  24%|██▍       | 58/240 [02:12<05:12,  1.71s/it][1;36m[2026-07-14 13:31:30][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:31][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:31][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_58   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  25%|██▍       | 59/240 [02:13<04:32,  1.50s/it][1;36m[2026-07-14 13:31:31][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:32][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:32][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_59   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  25%|██▌       | 60/240 [02:14<04:03,  1.36s/it][1;36m[2026-07-14 13:31:32][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:33][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:34][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_60   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  25%|██▌       | 61/240 [02:16<04:37,  1.55s/it][1;36m[2026-07-14 13:31:35][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:35][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:36][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_61   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  26%|██▌       | 62/240 [02:18<05:00,  1.69s/it][1;36m[2026-07-14 13:31:37][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:37][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:38][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_62   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  26%|██▋       | 63/240 [02:20<05:16,  1.79s/it][1;36m[2026-07-14 13:31:39][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:39][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:40][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_63   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  27%|██▋       | 64/240 [02:22<05:26,  1.85s/it][1;36m[2026-07-14 13:31:41][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:41][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:42][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_64   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  27%|██▋       | 65/240 [02:24<05:32,  1.90s/it][1;36m[2026-07-14 13:31:43][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:43][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:44][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_65   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  28%|██▊       | 66/240 [02:26<05:36,  1.93s/it][1;36m[2026-07-14 13:31:45][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:45][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:46][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_66   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  28%|██▊       | 67/240 [02:28<05:38,  1.96s/it][1;36m[2026-07-14 13:31:47][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:47][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:48][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_67   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  28%|██▊       | 68/240 [02:30<05:39,  1.97s/it][1;36m[2026-07-14 13:31:49][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:49][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:50][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_68   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  29%|██▉       | 69/240 [02:32<05:39,  1.99s/it][1;36m[2026-07-14 13:31:51][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:51][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:52][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_69   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  29%|██▉       | 70/240 [02:34<05:38,  1.99s/it][1;36m[2026-07-14 13:31:53][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:53][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:54][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_70   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  30%|██▉       | 71/240 [02:36<05:37,  2.00s/it][1;36m[2026-07-14 13:31:55][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:55][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:56][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_71   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  30%|███       | 72/240 [02:38<05:36,  2.00s/it][1;36m[2026-07-14 13:31:57][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:57][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:58][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_72   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  30%|███       | 73/240 [02:40<05:34,  2.01s/it][1;36m[2026-07-14 13:31:59][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:31:59][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:00][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_73   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  31%|███       | 74/240 [02:42<05:33,  2.01s/it][1;36m[2026-07-14 13:32:01][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:01][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:02][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_74   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  31%|███▏      | 75/240 [02:44<05:31,  2.01s/it][1;36m[2026-07-14 13:32:03][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:03][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:04][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_75   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  32%|███▏      | 76/240 [02:47<05:29,  2.01s/it][1;36m[2026-07-14 13:32:05][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:06][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:06][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_76   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  32%|███▏      | 77/240 [02:49<05:27,  2.01s/it][1;36m[2026-07-14 13:32:07][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:08][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:08][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_77   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  32%|███▎      | 78/240 [02:51<05:25,  2.01s/it][1;36m[2026-07-14 13:32:09][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:10][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:10][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_78   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  33%|███▎      | 79/240 [02:53<05:23,  2.01s/it][1;36m[2026-07-14 13:32:11][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:12][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:12][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_79   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  33%|███▎      | 80/240 [02:55<05:21,  2.01s/it][1;36m[2026-07-14 13:32:13][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:14][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:14][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_80   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  34%|███▍      | 81/240 [02:57<05:19,  2.01s/it][1;36m[2026-07-14 13:32:15][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:15][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:15][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_81   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  34%|███▍      | 82/240 [02:58<04:30,  1.71s/it][1;36m[2026-07-14 13:32:16][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:16][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:16][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_82   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  35%|███▍      | 83/240 [02:59<03:55,  1.50s/it][1;36m[2026-07-14 13:32:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:17][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:17][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_83   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  35%|███▌      | 84/240 [03:00<03:31,  1.35s/it][1;36m[2026-07-14 13:32:18][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:18][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:19][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_84   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  35%|███▌      | 85/240 [03:02<04:00,  1.55s/it][1;36m[2026-07-14 13:32:20][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:20][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:21][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_85   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  36%|███▌      | 86/240 [03:04<04:20,  1.69s/it][1;36m[2026-07-14 13:32:22][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:22][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:23][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_86   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  36%|███▋      | 87/240 [03:06<04:33,  1.79s/it][1;36m[2026-07-14 13:32:24][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:24][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:25][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_87   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  37%|███▋      | 88/240 [03:08<04:41,  1.85s/it][1;36m[2026-07-14 13:32:26][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:26][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:27][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_88   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  37%|███▋      | 89/240 [03:10<04:47,  1.90s/it][1;36m[2026-07-14 13:32:28][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:28][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:29][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_89   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  38%|███▊      | 90/240 [03:12<04:50,  1.93s/it][1;36m[2026-07-14 13:32:30][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:30][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:31][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_90   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  38%|███▊      | 91/240 [03:14<04:51,  1.96s/it][1;36m[2026-07-14 13:32:32][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:32][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:33][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_91   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  38%|███▊      | 92/240 [03:16<04:52,  1.97s/it][1;36m[2026-07-14 13:32:34][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:34][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:35][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_92   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  39%|███▉      | 93/240 [03:18<04:52,  1.99s/it][1;36m[2026-07-14 13:32:36][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:36][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:37][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_93   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  39%|███▉      | 94/240 [03:20<04:51,  1.99s/it][1;36m[2026-07-14 13:32:38][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:38][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:39][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_94   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  40%|███▉      | 95/240 [03:22<04:49,  2.00s/it][1;36m[2026-07-14 13:32:40][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:40][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:41][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_95   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  40%|████      | 96/240 [03:24<04:48,  2.00s/it][1;36m[2026-07-14 13:32:42][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:43][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:43][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_96   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  40%|████      | 97/240 [03:26<04:46,  2.01s/it][1;36m[2026-07-14 13:32:44][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:45][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:45][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_97   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  41%|████      | 98/240 [03:28<04:45,  2.01s/it][1;36m[2026-07-14 13:32:46][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:47][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:47][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_98   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  41%|████▏     | 99/240 [03:30<04:43,  2.01s/it][1;36m[2026-07-14 13:32:48][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:49][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_99   | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  42%|████▏     | 100/240 [03:32<04:41,  2.01s/it][1;36m[2026-07-14 13:32:50][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:51][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:51][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_100  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  42%|████▏     | 101/240 [03:34<04:39,  2.01s/it][1;36m[2026-07-14 13:32:52][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:53][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:53][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_101  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  42%|████▎     | 102/240 [03:36<04:37,  2.01s/it][1;36m[2026-07-14 13:32:54][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:55][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:55][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_102  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  43%|████▎     | 103/240 [03:38<04:35,  2.01s/it][1;36m[2026-07-14 13:32:56][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:57][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:57][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_103  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  43%|████▎     | 104/240 [03:40<04:33,  2.01s/it][1;36m[2026-07-14 13:32:58][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:59][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:32:59][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_104  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  44%|████▍     | 105/240 [03:42<04:31,  2.01s/it][1;36m[2026-07-14 13:33:00][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:01][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:01][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_105  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  44%|████▍     | 106/240 [03:44<04:29,  2.01s/it][1;36m[2026-07-14 13:33:02][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:03][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:03][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_106  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  45%|████▍     | 107/240 [03:46<04:27,  2.01s/it][1;36m[2026-07-14 13:33:04][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:05][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:05][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_107  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  45%|████▌     | 108/240 [03:48<04:25,  2.01s/it][1;36m[2026-07-14 13:33:06][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:07][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:07][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_108  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  45%|████▌     | 109/240 [03:50<04:23,  2.01s/it][1;36m[2026-07-14 13:33:08][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:09][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:09][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_109  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  46%|████▌     | 110/240 [03:52<04:21,  2.01s/it][1;36m[2026-07-14 13:33:10][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:10][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:10][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_110  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  46%|████▋     | 111/240 [03:53<03:40,  1.71s/it][1;36m[2026-07-14 13:33:11][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:11][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:12][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_111  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  47%|████▋     | 112/240 [03:55<03:50,  1.80s/it][1;36m[2026-07-14 13:33:13][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:13][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:14][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_112  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  47%|████▋     | 113/240 [03:57<03:56,  1.87s/it][1;36m[2026-07-14 13:33:15][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:15][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:16][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_113  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  48%|████▊     | 114/240 [03:59<04:00,  1.91s/it][1;36m[2026-07-14 13:33:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:17][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:18][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_114  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  48%|████▊     | 115/240 [04:01<04:02,  1.94s/it][1;36m[2026-07-14 13:33:19][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:19][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:20][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_115  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  48%|████▊     | 116/240 [04:03<04:03,  1.96s/it][1;36m[2026-07-14 13:33:21][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:22][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:22][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_116  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  49%|████▉     | 117/240 [04:05<04:03,  1.98s/it][1;36m[2026-07-14 13:33:23][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:24][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:24][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_117  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  49%|████▉     | 118/240 [04:07<04:02,  1.99s/it][1;36m[2026-07-14 13:33:25][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:26][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:26][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_118  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  50%|████▉     | 119/240 [04:09<04:01,  2.00s/it][1;36m[2026-07-14 13:33:27][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:28][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:28][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_119  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  50%|█████     | 120/240 [04:11<03:59,  2.00s/it][1;36m[2026-07-14 13:33:29][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:30][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:31][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:32][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_120  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  50%|█████     | 121/240 [04:14<04:34,  2.30s/it][1;36m[2026-07-14 13:33:32][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:33][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_121  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  51%|█████     | 122/240 [04:15<03:46,  1.92s/it][1;36m[2026-07-14 13:33:33][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:34][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:35][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_122  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  51%|█████▏    | 123/240 [04:17<03:47,  1.94s/it][1;36m[2026-07-14 13:33:36][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:36][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:37][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_123  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  52%|█████▏    | 124/240 [04:19<03:47,  1.96s/it][1;36m[2026-07-14 13:33:37][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:37][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:39][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_124  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  52%|█████▏    | 125/240 [04:21<03:47,  1.98s/it][1;36m[2026-07-14 13:33:39][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:39][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:41][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_125  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  52%|█████▎    | 126/240 [04:23<03:46,  1.99s/it][1;36m[2026-07-14 13:33:41][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:42][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:43][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_126  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  53%|█████▎    | 127/240 [04:25<03:45,  2.00s/it][1;36m[2026-07-14 13:33:43][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:44][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:45][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_127  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  53%|█████▎    | 128/240 [04:27<03:44,  2.00s/it][1;36m[2026-07-14 13:33:45][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:46][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:47][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_128  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  54%|█████▍    | 129/240 [04:29<03:42,  2.00s/it][1;36m[2026-07-14 13:33:47][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:48][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_129  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  54%|█████▍    | 130/240 [04:31<03:40,  2.01s/it][1;36m[2026-07-14 13:33:49][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:50][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:51][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_130  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  55%|█████▍    | 131/240 [04:33<03:39,  2.01s/it][1;36m[2026-07-14 13:33:51][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:52][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:53][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_131  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  55%|█████▌    | 132/240 [04:35<03:37,  2.01s/it][1;36m[2026-07-14 13:33:53][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:54][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:55][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_132  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  55%|█████▌    | 133/240 [04:37<03:35,  2.01s/it][1;36m[2026-07-14 13:33:55][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:56][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:57][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_133  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  56%|█████▌    | 134/240 [04:39<03:33,  2.01s/it][1;36m[2026-07-14 13:33:57][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:58][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:33:59][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_134  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  56%|█████▋    | 135/240 [04:41<03:31,  2.01s/it][1;36m[2026-07-14 13:34:00][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:00][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:01][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_135  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  57%|█████▋    | 136/240 [04:43<03:29,  2.01s/it][1;36m[2026-07-14 13:34:02][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:02][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:03][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_136  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  57%|█████▋    | 137/240 [04:45<03:27,  2.01s/it][1;36m[2026-07-14 13:34:04][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:04][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:05][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_137  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  57%|█████▊    | 138/240 [04:47<03:25,  2.01s/it][1;36m[2026-07-14 13:34:06][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:06][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:07][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_138  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  58%|█████▊    | 139/240 [04:49<03:23,  2.01s/it][1;36m[2026-07-14 13:34:08][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:09][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:09][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_139  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  58%|█████▊    | 140/240 [04:51<03:21,  2.01s/it][1;36m[2026-07-14 13:34:10][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:11][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:11][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_140  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  59%|█████▉    | 141/240 [04:53<03:19,  2.02s/it][1;36m[2026-07-14 13:34:12][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:12][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:13][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:13][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:13][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_141  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  59%|█████▉    | 142/240 [04:55<03:17,  2.02s/it][1;36m[2026-07-14 13:34:14][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_142  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  60%|█████▉    | 143/240 [04:56<02:46,  1.72s/it][1;36m[2026-07-14 13:34:15][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:15][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:16][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_143  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  60%|██████    | 144/240 [04:58<02:53,  1.80s/it][1;36m[2026-07-14 13:34:17][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:17][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:18][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_144  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  60%|██████    | 145/240 [05:00<02:57,  1.87s/it][1;36m[2026-07-14 13:34:19][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:19][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:20][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_145  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  61%|██████    | 146/240 [05:02<02:59,  1.91s/it][1;36m[2026-07-14 13:34:21][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:21][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:22][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_146  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  61%|██████▏   | 147/240 [05:04<03:00,  1.94s/it][1;36m[2026-07-14 13:34:23][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:23][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:24][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_147  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  62%|██████▏   | 148/240 [05:06<03:00,  1.96s/it][1;36m[2026-07-14 13:34:25][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:25][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:26][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_148  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  62%|██████▏   | 149/240 [05:08<02:59,  1.98s/it][1;36m[2026-07-14 13:34:27][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:27][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:28][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_149  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  62%|██████▎   | 150/240 [05:10<02:58,  1.99s/it][1;36m[2026-07-14 13:34:29][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:29][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:30][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_150  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  63%|██████▎   | 151/240 [05:12<02:57,  1.99s/it][1;36m[2026-07-14 13:34:31][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:31][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:32][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_151  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  63%|██████▎   | 152/240 [05:14<02:55,  2.00s/it][1;36m[2026-07-14 13:34:33][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:33][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:34][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_152  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  64%|██████▍   | 153/240 [05:16<02:54,  2.00s/it][1;36m[2026-07-14 13:34:35][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:35][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:36][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_153  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  64%|██████▍   | 154/240 [05:18<02:52,  2.01s/it][1;36m[2026-07-14 13:34:37][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:37][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:38][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_154  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  65%|██████▍   | 155/240 [05:21<02:50,  2.01s/it][1;36m[2026-07-14 13:34:39][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:39][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:40][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_155  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  65%|██████▌   | 156/240 [05:23<02:48,  2.01s/it][1;36m[2026-07-14 13:34:41][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:41][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:42][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_156  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  65%|██████▌   | 157/240 [05:25<02:46,  2.01s/it][1;36m[2026-07-14 13:34:43][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:43][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:44][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_157  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  66%|██████▌   | 158/240 [05:27<02:44,  2.01s/it][1;36m[2026-07-14 13:34:45][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:45][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:46][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_158  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  66%|██████▋   | 159/240 [05:29<02:42,  2.01s/it][1;36m[2026-07-14 13:34:47][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:47][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:48][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_159  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  67%|██████▋   | 160/240 [05:31<02:40,  2.01s/it][1;36m[2026-07-14 13:34:49][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:50][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:50][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_160  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  67%|██████▋   | 161/240 [05:33<02:39,  2.01s/it][1;36m[2026-07-14 13:34:51][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:52][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:52][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_161  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  68%|██████▊   | 162/240 [05:35<02:37,  2.01s/it][1;36m[2026-07-14 13:34:53][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:54][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:54][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_162  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  68%|██████▊   | 163/240 [05:37<02:35,  2.01s/it][1;36m[2026-07-14 13:34:55][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:56][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:56][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_163  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  68%|██████▊   | 164/240 [05:39<02:32,  2.01s/it][1;36m[2026-07-14 13:34:57][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:58][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:34:58][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_164  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  69%|██████▉   | 165/240 [05:41<02:31,  2.01s/it][1;36m[2026-07-14 13:34:59][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:00][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:00][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_165  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  69%|██████▉   | 166/240 [05:43<02:29,  2.01s/it][1;36m[2026-07-14 13:35:01][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:02][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:02][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_166  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  70%|██████▉   | 167/240 [05:45<02:26,  2.01s/it][1;36m[2026-07-14 13:35:03][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:04][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:04][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_167  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  70%|███████   | 168/240 [05:47<02:24,  2.01s/it][1;36m[2026-07-14 13:35:05][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:06][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:07][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_168  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  70%|███████   | 169/240 [05:50<02:44,  2.32s/it][1;36m[2026-07-14 13:35:08][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:08][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:10][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:10][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:10][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_169  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  71%|███████   | 170/240 [05:53<02:56,  2.53s/it][1;36m[2026-07-14 13:35:11][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_170  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  71%|███████▏  | 171/240 [05:54<02:22,  2.07s/it][1;36m[2026-07-14 13:35:12][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:13][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:15][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:15][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_171  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  72%|███████▏  | 172/240 [05:58<03:00,  2.66s/it][1;36m[2026-07-14 13:35:15][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:17][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_172  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  72%|███████▏  | 173/240 [06:00<02:45,  2.46s/it][1;36m[2026-07-14 13:35:18][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:18][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:20][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:20][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_173  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  72%|███████▎  | 174/240 [06:03<02:53,  2.63s/it][1;36m[2026-07-14 13:35:20][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:22][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_174  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  73%|███████▎  | 175/240 [06:05<02:38,  2.44s/it][1;36m[2026-07-14 13:35:23][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:23][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:25][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:25][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_175  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  73%|███████▎  | 176/240 [06:08<02:47,  2.62s/it][1;36m[2026-07-14 13:35:25][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:27][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_176  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  74%|███████▍  | 177/240 [06:10<02:33,  2.43s/it][1;36m[2026-07-14 13:35:28][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:29][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:29][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_177  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  74%|███████▍  | 178/240 [06:12<02:22,  2.31s/it][1;36m[2026-07-14 13:35:30][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:31][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:32][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:32][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_178  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  75%|███████▍  | 179/240 [06:15<02:33,  2.52s/it][1;36m[2026-07-14 13:35:33][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:34][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:34][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_179  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  75%|███████▌  | 180/240 [06:17<02:22,  2.37s/it][1;36m[2026-07-14 13:35:35][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:36][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:36][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_180  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  75%|███████▌  | 181/240 [06:19<02:13,  2.26s/it][1;36m[2026-07-14 13:35:37][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:38][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:38][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_181  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  76%|███████▌  | 182/240 [06:21<02:06,  2.19s/it][1;36m[2026-07-14 13:35:39][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:39][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_182  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  76%|███████▋  | 183/240 [06:22<01:44,  1.84s/it][1;36m[2026-07-14 13:35:40][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:41][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:42][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_183  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  77%|███████▋  | 184/240 [06:25<02:02,  2.19s/it][1;36m[2026-07-14 13:35:43][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:44][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:45][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:45][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_184  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  77%|███████▋  | 185/240 [06:28<02:13,  2.44s/it][1;36m[2026-07-14 13:35:46][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:47][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:47][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_185  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  78%|███████▊  | 186/240 [06:30<02:04,  2.31s/it][1;36m[2026-07-14 13:35:48][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:49][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_186  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  78%|███████▊  | 187/240 [06:32<01:57,  2.22s/it][1;36m[2026-07-14 13:35:50][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:51][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:51][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_187  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  78%|███████▊  | 188/240 [06:34<01:52,  2.16s/it][1;36m[2026-07-14 13:35:52][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:53][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:53][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_188  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  79%|███████▉  | 189/240 [06:36<01:47,  2.12s/it][1;36m[2026-07-14 13:35:54][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:55][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:55][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_189  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  79%|███████▉  | 190/240 [06:38<01:44,  2.08s/it][1;36m[2026-07-14 13:35:56][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:57][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:57][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_190  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  80%|███████▉  | 191/240 [06:40<01:40,  2.06s/it][1;36m[2026-07-14 13:35:58][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:59][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:35:59][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_191  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  80%|████████  | 192/240 [06:42<01:38,  2.05s/it][1;36m[2026-07-14 13:36:00][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:01][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:01][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_192  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  80%|████████  | 193/240 [06:44<01:35,  2.04s/it][1;36m[2026-07-14 13:36:02][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:03][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:03][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:03][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_193  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  81%|████████  | 194/240 [06:46<01:33,  2.03s/it][1;36m[2026-07-14 13:36:05][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:05][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_194  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  81%|████████▏ | 195/240 [06:48<01:31,  2.02s/it][1;36m[2026-07-14 13:36:05][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:07][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:07][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_195  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  82%|████████▏ | 196/240 [06:50<01:28,  2.02s/it][1;36m[2026-07-14 13:36:09][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:10][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:11][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_196  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  82%|████████▏ | 197/240 [06:53<01:39,  2.32s/it][1;36m[2026-07-14 13:36:11][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:12][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:13][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_197  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  82%|████████▎ | 198/240 [06:55<01:33,  2.23s/it][1;36m[2026-07-14 13:36:13][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:14][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:15][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_198  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  83%|████████▎ | 199/240 [06:57<01:28,  2.16s/it][1;36m[2026-07-14 13:36:15][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:16][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:17][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_199  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  83%|████████▎ | 200/240 [06:59<01:24,  2.12s/it][1;36m[2026-07-14 13:36:17][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:19][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:19][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_200  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  84%|████████▍ | 201/240 [07:01<01:21,  2.09s/it][1;36m[2026-07-14 13:36:19][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:21][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:21][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_201  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  84%|████████▍ | 202/240 [07:03<01:18,  2.06s/it][1;36m[2026-07-14 13:36:21][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:23][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:23][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_202  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  85%|████████▍ | 203/240 [07:05<01:15,  2.05s/it][1;36m[2026-07-14 13:36:23][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:25][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:25][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_203  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  85%|████████▌ | 204/240 [07:07<01:13,  2.04s/it][1;36m[2026-07-14 13:36:25][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:27][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:27][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_204  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  85%|████████▌ | 205/240 [07:09<01:11,  2.03s/it][1;36m[2026-07-14 13:36:27][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:29][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:29][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_205  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  86%|████████▌ | 206/240 [07:11<01:08,  2.02s/it][1;36m[2026-07-14 13:36:29][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:31][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:31][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_206  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  86%|████████▋ | 207/240 [07:13<01:06,  2.02s/it][1;36m[2026-07-14 13:36:31][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:33][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:33][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_207  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  87%|████████▋ | 208/240 [07:15<01:04,  2.02s/it][1;36m[2026-07-14 13:36:33][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:35][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:35][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_208  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  87%|████████▋ | 209/240 [07:17<01:02,  2.01s/it][1;36m[2026-07-14 13:36:35][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:37][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:37][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_209  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  88%|████████▊ | 210/240 [07:19<01:00,  2.01s/it][1;36m[2026-07-14 13:36:37][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:39][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_210  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  88%|████████▊ | 211/240 [07:21<00:58,  2.01s/it][1;36m[2026-07-14 13:36:40][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:40][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:42][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_211  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+[1;36m[2026-07-14 13:36:42][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+ATK任务进度:  88%|████████▊ | 212/240 [07:24<01:04,  2.31s/it][1;36m[2026-07-14 13:36:42][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:44][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_212  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+[1;36m[2026-07-14 13:36:44][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+ATK任务进度:  89%|████████▉ | 213/240 [07:26<01:00,  2.22s/it][1;36m[2026-07-14 13:36:45][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:46][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_213  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  89%|████████▉ | 214/240 [07:28<00:56,  2.16s/it][1;36m[2026-07-14 13:36:46][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:47][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:48][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_214  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  90%|████████▉ | 215/240 [07:30<00:52,  2.12s/it][1;36m[2026-07-14 13:36:48][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:49][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:50][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_215  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  90%|█████████ | 216/240 [07:32<00:50,  2.09s/it][1;36m[2026-07-14 13:36:50][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:51][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:52][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_216  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  90%|█████████ | 217/240 [07:34<00:47,  2.06s/it][1;36m[2026-07-14 13:36:52][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:53][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:54][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_217  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  91%|█████████ | 218/240 [07:36<00:45,  2.05s/it][1;36m[2026-07-14 13:36:55][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:56][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:57][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_218  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  91%|█████████▏| 219/240 [07:39<00:49,  2.34s/it][1;36m[2026-07-14 13:36:57][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:36:58][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:00][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_219  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  92%|█████████▏| 220/240 [07:42<00:50,  2.54s/it][1;36m[2026-07-14 13:37:00][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:00][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:02][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_220  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  92%|█████████▏| 221/240 [07:44<00:45,  2.38s/it][1;36m[2026-07-14 13:37:02][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:02][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:04][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_221  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  92%|█████████▎| 222/240 [07:46<00:41,  2.28s/it][1;36m[2026-07-14 13:37:05][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:05][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:07][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_222  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  93%|█████████▎| 223/240 [07:49<00:42,  2.50s/it][1;36m[2026-07-14 13:37:07][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:07][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:09][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_223  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  93%|█████████▎| 224/240 [07:51<00:37,  2.35s/it][1;36m[2026-07-14 13:37:10][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:10][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:12][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_224  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  94%|█████████▍| 225/240 [07:54<00:38,  2.55s/it][1;36m[2026-07-14 13:37:12][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:12][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:14][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_225  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  94%|█████████▍| 226/240 [07:56<00:33,  2.39s/it][1;36m[2026-07-14 13:37:14][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:14][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:16][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_226  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  95%|█████████▍| 227/240 [07:58<00:29,  2.28s/it][1;36m[2026-07-14 13:37:16][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:16][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:18][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_227  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  95%|█████████▌| 228/240 [08:00<00:26,  2.20s/it][1;36m[2026-07-14 13:37:18][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:18][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:20][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_228  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  95%|█████████▌| 229/240 [08:02<00:23,  2.14s/it][1;36m[2026-07-14 13:37:21][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:22][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:23][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_229  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  96%|█████████▌| 230/240 [08:06<00:24,  2.40s/it][1;36m[2026-07-14 13:37:23][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:24][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:25][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_230  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  96%|█████████▋| 231/240 [08:08<00:20,  2.28s/it][1;36m[2026-07-14 13:37:26][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:27][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:28][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_231  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |  False   |
++-----------+----------+[0m[0m
+ATK任务进度:  97%|█████████▋| 232/240 [08:11<00:20,  2.50s/it][1;36m[2026-07-14 13:37:28][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:29][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:30][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_232  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  97%|█████████▋| 233/240 [08:13<00:16,  2.36s/it][1;36m[2026-07-14 13:37:31][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:32][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:33][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_233  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  98%|█████████▊| 234/240 [08:16<00:15,  2.55s/it][1;36m[2026-07-14 13:37:33][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:34][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:35][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_234  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  98%|█████████▊| 235/240 [08:18<00:11,  2.39s/it][1;36m[2026-07-14 13:37:36][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:37][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:38][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_235  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  98%|█████████▊| 236/240 [08:21<00:10,  2.58s/it][1;36m[2026-07-14 13:37:38][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-1][0m [1;36m[241080][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:39][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:40][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_236  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  99%|█████████▉| 237/240 [08:23<00:07,  2.41s/it][1;36m[2026-07-14 13:37:41][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-2][0m [1;36m[241082][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:42][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:44][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_237  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度:  99%|█████████▉| 238/240 [08:27<00:05,  2.89s/it][1;36m[2026-07-14 13:37:44][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-3][0m [1;36m[241084][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:45][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:46][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mmain.py[0m:[1;36m436[0m]  [1m[34mcreate_tasks over!!!, case_config_name:GammaAddRmsNorm, all_cases_num: 240[0m[0m
+[1;36m[2026-07-14 13:37:47][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_238  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度: 100%|█████████▉| 239/240 [08:30<00:02,  2.93s/it][1;36m[2026-07-14 13:37:47][0m [1;36m[INFO][0m [1;36m[ForkPoolWorker-4][0m [1;36m[241086][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义cpu api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:47][0m [1;36m[INFO][0m [1;36m[127.0.0.1:9090@device_run_0][0m [1;36m[241075][0m [[1;36mopp_executor.py[0m:[1;36m209[0m]  [1m[34m==开始自定义pyaclnn api阶段==[0m[0m
+[1;36m[2026-07-14 13:37:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mreports.py[0m:[1;36m136[0m]  [1m[34m
++-----------+----------+
+|   id_239  | accuracy |
++-----------+----------+
+| pyaclnn_0 |    -     |
+|   cpu_0   |   True   |
++-----------+----------+[0m[0m
+ATK任务进度: 100%|██████████| 240/240 [08:32<00:00,  2.65s/it]ATK任务进度: 100%|██████████| 240/240 [08:32<00:00,  2.13s/it]
+[1;36m[2026-07-14 13:37:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mresult_process.py[0m:[1;36m75[0m]  [1m[34mstart write report ...[0m[0m
+[1;36m[2026-07-14 13:37:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mcsv_report.py[0m:[1;36m465[0m]  [1m[34m
++-------+----------+------------------+------------------+----------------------+----------------------+----------------+--------------+
+|  名称 | 总用例数 | 执行成功用例个数 | 执行失败用例个数 | 精度比对通过用例个数 | 错误信息匹配用例个数 | 精度比对通过率 | 精度是否达标 |
++-------+----------+------------------+------------------+----------------------+----------------------+----------------+--------------+
+| cpu_0 |   240    |       240        |        0         |         206          |          0           |    85.8333     |    Failed    |
++-------+----------+------------------+------------------+----------------------+----------------------+----------------+--------------+[0m[0m
+[1;36m[2026-07-14 13:37:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mcsv_report.py[0m:[1;36m456[0m]  [1m[34mTotal Task: 240, success 240, failed 0[0m[0m
+[1;36m[2026-07-14 13:37:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mcsv_report.py[0m:[1;36m457[0m]  [1m[34mSummary info: acc_pass_result:Failed\\tis_acc_dc_pass:None\\tis_e2e_perf_pass:None\\tis_device_perf_pass:None\\tis_device_memory_pass:None.[0m[0m
+[1;36m[2026-07-14 13:37:49][0m [1;36m[INFO][0m [1;36m[ResultProcess-5][0m [1;36m[241108][0m [[1;36mcsv_report.py[0m:[1;36m520[0m]  [1m[34msave result excel file: /workspace/atk_accuracy_a5/atk_output/atk_aclnnGammaAddRmsNorm_full_compat_2026-07-14-21-29-15-893202/report/atk_aclnnGammaAddRmsNorm_full_compat_reports_2026-07-14-13-29-17.xlsx[0m[0m
+[1;36m[2026-07-14 13:37:49][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mbase.py[0m:[1;36m241[0m]  [1m[34matk task success![0m[0m
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+Restoring 1 unacknowledged message(s)
+Restoring 1 unacknowledged message(s)
+[1;36m[2026-07-14 13:37:53][0m [1;36m[INFO][0m [1;36m[MainProcess][0m [1;36m[240930][0m [[1;36mbase.py[0m:[1;36m245[0m]  [1m[34matk task finish. cost time: 516 s[0m[0m
