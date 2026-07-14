@@ -1,0 +1,14 @@
+Host tiling UT result (ops-nn, --ophost --ops=gamma_add_rms_norm --soc=ascend950):
+- Total cases: 10
+- Passed: 10
+- Failed: 0
+- tiling key 1000 (RFullLoad, full-load gamma): case gamma_add_rms_norm_tiling_005, addGammaOffset == 1 VERIFIED
+- tiling key 2000 (SplitD, split-D gamma): case gamma_add_rms_norm_tiling_004, addGammaOffset == 1 VERIFIED
+
+Fixes applied (no operator math changed):
+1. op_host/CMakeLists.txt: added rms_norm to DEPENDENCIES (patch omitted it; arch35 kernel cross-includes ../../rms_norm/).
+2. tests/ut/op_host/test_gamma_add_rms_norm_tiling.cpp:
+   (a) const-correctness: dropped const on tiling_data pointer (CANN TILING_DATA_FIELD_DEF getter is non-const in this version).
+   (b) readback: replaced buggy reinterpret_cast<HostStruct*>(buf)->get_addGammaOffset() (CANN host get_() returns the
+       in-memory C++ member, not the serialized buffer) with a raw read of the serialized uint32 at its field offset
+       (56 for RFullLoad, 48 for SplitD). Operator proven correct: byte dump showed addGammaOffset=1 serialized.

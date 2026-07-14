@@ -1,0 +1,10 @@
+diff --git a/norm/gamma_add_rms_norm/op_host/CMakeLists.txt b/norm/gamma_add_rms_norm/op_host/CMakeLists.txt
+index aa940845b..316dcc920 100644
+--- a/norm/gamma_add_rms_norm/op_host/CMakeLists.txt
++++ b/norm/gamma_add_rms_norm/op_host/CMakeLists.txt
+@@ -7,4 +7,4 @@
+ # See LICENSE in the root of the software repository for the full text of the License.
+ #/
+ 
+-add_modules_sources(HOSTNAME ${OPHOST_NAME} MODE PRIVATE DIR ${CMAKE_CURRENT_SOURCE_DIR} OPTYPE gamma_add_rms_norm ACLNNTYPE aclnn_exclude DEPENDENCIES norm_common)
++add_modules_sources(HOSTNAME ${OPHOST_NAME} MODE PRIVATE DIR ${CMAKE_CURRENT_SOURCE_DIR} OPTYPE gamma_add_rms_norm ACLNNTYPE aclnn_exclude DEPENDENCIES norm_common rms_norm)

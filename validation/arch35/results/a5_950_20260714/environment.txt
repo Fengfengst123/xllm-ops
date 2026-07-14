@@ -1,0 +1,63 @@
+# A5 Validation Environment
+Date: 2026-07-14T09:38:08Z
+
++-------------------------------------------------------------------------------------------------+
+| npu-smi 25.7.rc1                                 Version: 25.7.rc1                              |
++--------+------------------+---------------+-----------------------------------------------------+
+| NPU ID | Name             | Health        | Power(W)    Temp(C)           Hugepages-Usage(page) |
+|        |                  | Bus-Id        | NPU Util(%) Memory-Usage(MB)  HBM-Usage(MB)         |
++========+==================+===============+=====================================================+
+| 0      | Ascend950PR      | OK            | 276.3       64                0     / 0             |
+|        |                  | 0000:01:00.0  | 100         0    / 0          7159  / 131072        |
++========+==================+===============+=====================================================+
+| 1      | Ascend950PR      | Alarm         | 191.8       55                0     / 0             |
+|        |                  | 0000:11:00.0  | 0           0    / 0          5408  / 131072        |
++========+==================+===============+=====================================================+
+| 2      | Ascend950PR      | Alarm         | 199.2       62                0     / 0             |
+|        |                  | 0000:61:00.0  | 0           0    / 0          5410  / 131072        |
++========+==================+===============+=====================================================+
+| 3      | Ascend950PR      | OK            | 269.1       63                0     / 0             |
+|        |                  | 0000:71:00.0  | 99          0    / 0          5635  / 131072        |
++========+==================+===============+=====================================================+
+| 4      | Ascend950PR      | OK            | 205.6       55                0     / 0             |
+|        |                  | 0000:81:00.0  | 0           0    / 0          5407  / 131072        |
++========+==================+===============+=====================================================+
+| 5      | Ascend950PR      | OK            | 200.9       55                0     / 0             |
+|        |                  | 0000:91:00.0  | 0           0    / 0          5409  / 131072        |
++========+==================+===============+=====================================================+
+| 6      | Ascend950PR      | OK            | 193.6       54                0     / 0             |
+|        |                  | 0000:E1:00.0  | 0           0    / 0          5406  / 131072        |
++========+==================+===============+=====================================================+
+| 7      | Ascend950PR      | OK            | 191.6       54                0     / 0             |
+|        |                  | 0000:F1:00.0  | 0           0    / 0          5409  / 131072        |
++========+==================+===============+=====================================================+
++---------------------------+---------------+-----------------------------------------------------+
+| NPU ID                    | Process id    | Process name             | Process memory(MB)       |
++===========================+===============+=====================================================+
+| 0                         | 363264        |                          | 286                     |
+| 0                         | 1718835       |                          | 530                     |
++===========================+===============+=====================================================+
+| No running processes found in NPU 1                                                             |
++===========================+===============+=====================================================+
+| No running processes found in NPU 2                                                             |
++===========================+===============+=====================================================+
+| 3                         | 458532        |                          | 274                     |
++===========================+===============+=====================================================+
+| No running processes found in NPU 4                                                             |
++===========================+===============+=====================================================+
+| No running processes found in NPU 5                                                             |
++===========================+===============+=====================================================+
+| No running processes found in NPU 6                                                             |
++===========================+===============+=====================================================+
+| No running processes found in NPU 7                                                             |
++===========================+===============+=====================================================+
+
+ASCEND_AICPU_PATH=/usr/local/Ascend/cann-9.1.0-beta.1
+ASCEND_HOME_PATH=/usr/local/Ascend/cann-9.1.0-beta.1
+ASCEND_OPP_PATH=/usr/local/Ascend/cann-9.1.0-beta.1/opp
+ASCEND_TOOLKIT_HOME=/usr/local/Ascend/cann-9.1.0-beta.1
+ASCEND_TOOLKIT_LATEST_HOME=/usr/local/Ascend/ascend-toolkit/latest
+LD_LIBRARY_PATH=/usr/local/Ascend/cann-9.1.0-beta.1/lib64:/usr/local/Ascend/cann-9.1.0-beta.1/lib64/plugin/opskernel:/usr/local/Ascend/cann-9.1.0-beta.1/lib64/plugin/nnengine:/usr/local/Ascend/cann-9.1.0-beta.1/opp/built-in/op_impl/ai_core/tbe/op_tiling/lib/linux/x86_64:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/lib:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/examples:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/tests/atbopstest:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/lib:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/examples:/usr/local/Ascend/nnal/atb/latest/atb/cxx_abi_1/tests/atbopstest:/usr/local/Ascend/ascend-toolkit/latest/tools/aml/lib64:/usr/local/Ascend/ascend-toolkit/latest/tools/aml/lib64/plugin:/usr/local/Ascend/ascend-toolkit/latest/lib64:/usr/local/Ascend/ascend-toolkit/latest/lib64/plugin/opskernel:/usr/local/Ascend/ascend-toolkit/latest/lib64/plugin/nnengine:/usr/local/Ascend/ascend-toolkit/latest/opp/built-in/op_impl/ai_core/tbe/op_tiling:/usr/local/python3.12.13/lib:
+PYTHONPATH=/usr/local/Ascend/cann-9.1.0-beta.1/python/site-packages:/usr/local/Ascend/cann-9.1.0-beta.1/opp/built-in/op_impl/ai_core/tbe:/usr/local/Ascend/ascend-toolkit/latest/python/site-packages:/usr/local/Ascend/ascend-toolkit/latest/opp/built-in/op_impl/ai_core/tbe:
+
+WARNING: Package(s) not found: ATK, torch, torch-npu

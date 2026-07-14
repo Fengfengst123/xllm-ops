@@ -1,0 +1,35 @@
+diff --git a/norm/gamma_add_rms_norm/tests/ut/op_host/test_gamma_add_rms_norm_tiling.cpp b/norm/gamma_add_rms_norm/tests/ut/op_host/test_gamma_add_rms_norm_tiling.cpp
+index 98cefb432..872f03f26 100644
+--- a/norm/gamma_add_rms_norm/tests/ut/op_host/test_gamma_add_rms_norm_tiling.cpp
++++ b/norm/gamma_add_rms_norm/tests/ut/op_host/test_gamma_add_rms_norm_tiling.cpp
+@@ -704,9 +704,11 @@ TEST_F(GammaAddRmsNormTiling, gamma_add_rms_norm_tiling_004)
+     // todo check tiling result
+     auto tiling_key = tiling_context->GetTilingKey();
+     ASSERT_EQ(tiling_key, 2000);
+-    const auto* tiling_data = reinterpret_cast<const optiling::GammaAddRMSNormRegbaseTilingData*>(
+-        tiling_context->GetRawTilingData()->GetData());
+-    ASSERT_EQ(tiling_data->get_addGammaOffset(), 1U);
++    // GammaAddRMSNormRegbaseTilingData serialized layout: 6*uint32 + 2*float + 4*uint32 + uint32(addGammaOffset)
++    // => addGammaOffset at byte offset 48. Read the raw serialized buffer (host get_() does not
++    // reflect the buffer, see note in tiling_005).
++    const auto* raw_tiling = static_cast<const uint8_t*>(tiling_context->GetRawTilingData()->GetData());
++    ASSERT_EQ(*reinterpret_cast<const uint32_t*>(raw_tiling + 48), 1U);
+     // dlog_setlevel(0, 3, 0);
+ }
+ 
+@@ -808,9 +810,12 @@ TEST_F(GammaAddRmsNormTiling, gamma_add_rms_norm_tiling_005)
+     // todo check tiling result
+     auto tiling_key = tiling_context->GetTilingKey();
+     ASSERT_EQ(tiling_key, 1000);
+-    const auto* tiling_data = reinterpret_cast<const optiling::GammaAddRMSNormRegbaseRFullLoadTilingData*>(
+-        tiling_context->GetRawTilingData()->GetData());
+-    ASSERT_EQ(tiling_data->get_addGammaOffset(), 1U);
++    // GammaAddRMSNormRegbaseRFullLoadTilingData serialized layout: 6*uint64 + 2*float + uint32(addGammaOffset)
++    // => addGammaOffset at byte offset 56. The CANN host tiling struct's get_<field>() returns the
++    // in-memory C++ member (default 0), NOT the serialized buffer, so reinterpret_cast+get_ would
++    // always read 0. Read the raw serialized buffer instead.
++    const auto* raw_tiling = static_cast<const uint8_t*>(tiling_context->GetRawTilingData()->GetData());
++    ASSERT_EQ(*reinterpret_cast<const uint32_t*>(raw_tiling + 56), 1U);
+     // dlog_setlevel(0, 3, 0);
+ }
+ 

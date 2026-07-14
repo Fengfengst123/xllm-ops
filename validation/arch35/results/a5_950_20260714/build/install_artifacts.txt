@@ -1,0 +1,2 @@
+/workspace/install_gamma_a5/vendors/custom_xllm_math_nn/bin/set_env.bash
+/workspace/install_gamma_a5/vendors/custom_xllm_math_nn/op_api/lib/libcust_opapi.so

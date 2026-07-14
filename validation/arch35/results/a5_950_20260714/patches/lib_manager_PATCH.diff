@@ -1,0 +1,78 @@
+--- /workspace/artifacts/fixes/atk-venv/lib_manager_ORIGINAL.py	2026-07-14 07:04:00.935815175 +0000
++++ /workspace/venv/lib/python3.12/site-packages/atk/tasks/backends/lib_interface/lib_manager.py	2026-07-14 07:04:33.665812588 +0000
+@@ -60,10 +60,53 @@
+ """
+ 
+ import ctypes
++import logging
+ import os
+ from typing import Any, Dict, List, Union
+ 
+ 
++# --- A5 GammaAddRmsNorm custom-op-api fallback (venv-local ATK compat patch) ---
++# Only these two symbols are allowed to fall back to GAMMA_OPAPI_LIB. Both must
++# resolve from the SAME custom-library handle. Do not route any other ACLNN
++# symbol to the custom library.
++_GAMMA_FALLBACK_SYMBOLS = frozenset({
++    "aclnnGammaAddRmsNormGetWorkspaceSize",
++    "aclnnGammaAddRmsNorm",
++})
++_GAMMA_CUSTOM_LIB_HANDLE = None  # module-level cache: single CDLL, never re-dlopen
++_GAMMA_CUSTOM_LIB_PATH_LOGGED = False
++
++
++def _get_gamma_custom_lib():
++    """Load (once) and cache the custom op-api lib pointed to by GAMMA_OPAPI_LIB.
++
++    Uses RTLD_GLOBAL so its symbols are visible to dependent lookups. Returns the
++    cached CDLL handle, or None if GAMMA_OPAPI_LIB is unset / file missing.
++    """
++    global _GAMMA_CUSTOM_LIB_HANDLE, _GAMMA_CUSTOM_LIB_PATH_LOGGED
++    if _GAMMA_CUSTOM_LIB_HANDLE is not None:
++        return _GAMMA_CUSTOM_LIB_HANDLE
++
++    lib_path = os.environ.get("GAMMA_OPAPI_LIB")
++    if not lib_path or not os.path.exists(lib_path):
++        return None
++
++    # Resolve to absolute + realpath once for the log (point 5: prove it is the
++    # from-scratch built/installed lib, not CANN libopapi.so / old build / other user).
++    abs_path = os.path.abspath(lib_path)
++    real_path = os.path.realpath(abs_path)
++    if not _GAMMA_CUSTOM_LIB_PATH_LOGGED:
++        logging.getLogger("atk").info(
++            "[GAMMA_OPAPI_FALLBACK] binding aclnnGammaAddRmsNorm[GetWorkspaceSize] "
++            "from custom lib: GAMMA_OPAPI_LIB=%s abs=%s realpath=%s",
++            lib_path, abs_path, real_path,
++        )
++        _GAMMA_CUSTOM_LIB_PATH_LOGGED = True
++
++    _GAMMA_CUSTOM_LIB_HANDLE = ctypes.CDLL(real_path, mode=ctypes.RTLD_GLOBAL)
++    return _GAMMA_CUSTOM_LIB_HANDLE
++
++
+ class LibManager:
+     _libs: Dict[str, ctypes.CDLL] = {}
+     _func_bindings: Dict[str, Dict[str, ctypes.CFUNCTYPE]] = {}
+@@ -100,7 +143,20 @@
+         if func_name in LibManager._func_bindings[self.lib_name]:
+             return LibManager._func_bindings[self.lib_name][func_name]
+ 
+-        func = getattr(LibManager._libs[self.lib_name], func_name)
++        func = None
++        try:
++            func = getattr(LibManager._libs[self.lib_name], func_name)
++        except AttributeError:
++            # A5 GammaAddRmsNorm: the primary aclnn lib (CANN libopapi.so) does not
++            # carry this custom op's symbols. Fall back to GAMMA_OPAPI_LIB, but ONLY
++            # for the two gamma symbols, and always from the same cached handle.
++            if func_name in _GAMMA_FALLBACK_SYMBOLS:
++                custom_lib = _get_gamma_custom_lib()
++                if custom_lib is not None:
++                    func = getattr(custom_lib, func_name)
++            if func is None:
++                raise
++
+         func.argtypes = arg_types
+         func.restype = return_type
+ 
