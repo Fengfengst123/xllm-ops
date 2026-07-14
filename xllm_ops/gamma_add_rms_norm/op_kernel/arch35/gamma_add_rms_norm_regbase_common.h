@@ -17,7 +17,6 @@
 
 #include "kernel_operator.h"
 #include "kernel_tiling/kernel_tiling.h"
-#include "kernel_utils.h"
 #include "../inc/platform.h"
 #include "../../rms_norm/rms_norm_base.h"
 #include "../../rms_norm/arch35/rms_norm_regbase_common.h"

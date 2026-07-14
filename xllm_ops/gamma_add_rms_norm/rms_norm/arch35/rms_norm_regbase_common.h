@@ -16,7 +16,6 @@
 #define OPS_BUILT_IN_TBE_IMPL_ASCENDC_RMS_NORM_REGBASE_COMMON_H
 #include "kernel_operator.h"
 #include "kernel_tiling/kernel_tiling.h"
-#include "kernel_utils.h"
 #include "../rms_norm_base.h"
 #include "../../norm_common/reduce_common_regbase.h"
 

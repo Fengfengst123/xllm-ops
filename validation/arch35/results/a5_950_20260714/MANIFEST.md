@@ -45,3 +45,13 @@
 | /workspace/ops-nn/build/ | ~600MB | n/a | ops-nn build (rebuildable) |
 | /workspace/install_gamma_a5/ | 6.4MB | n/a | Installed .run package (rebuildable) |
 | /workspace/artifacts/msprof/*/PROF_*/ | ~50MB total | n/a | Full msprof raw timeline (op_summary.csv extracted instead) |
+
+## Additional files (correction commit)
+
+| File | Purpose |
+|---|---|
+| build/build_gamma_a5.log | xllm-ops build log (exit 0, kernel built) |
+| build/build_opsnn_gamma_a5.log | ops-nn build log (for comparison) |
+| build/direct_smoke_xllmops_built_4x2048.log | xllm-ops kernel smoke test |
+| build/direct_smoke_opsnn_4x2048.log | ops-nn kernel smoke test |
+| build/direct_smoke_opsnn_4x8192.log | ops-nn kernel 8192 smoke |

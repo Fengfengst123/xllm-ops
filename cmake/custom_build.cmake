@@ -147,6 +147,18 @@ if (BUILD_OPEN_PROJECT)
             -Wl,--as-needed
             c_sec
     )
+    # Link libops_base.so for Ops::Base symbols used by proto/infershape code.
+    if(DEFINED OPBASE_LIB_DIR AND EXISTS "${OPBASE_LIB_DIR}")
+        target_link_libraries(cust_proto PRIVATE "${OPBASE_LIB_DIR}")
+    else()
+        find_library(_CUST_PROTO_OPS_BASE_LIB ops_base
+            PATHS ${ASCEND_CANN_PACKAGE_PATH}/${SYSTEM_PREFIX}/lib64
+                  ${ASCEND_CANN_PACKAGE_PATH}/lib64
+            NO_DEFAULT_PATH)
+        if(_CUST_PROTO_OPS_BASE_LIB)
+            target_link_libraries(cust_proto PRIVATE "${_CUST_PROTO_OPS_BASE_LIB}")
+        endif()
+    endif()
     set_target_properties(cust_proto PROPERTIES OUTPUT_NAME
             cust_opsproto_rt2.0
     )
@@ -193,6 +205,18 @@ if (BUILD_OPEN_PROJECT)
             -Wl,--no-whole-archive
             c_sec
     )
+    # Link libops_base.so for Ops::Base::ToString used by tiling error logging.
+    if(DEFINED OPBASE_LIB_DIR AND EXISTS "${OPBASE_LIB_DIR}")
+        target_link_libraries(cust_opmaster PRIVATE "${OPBASE_LIB_DIR}")
+    else()
+        find_library(_CUST_OPS_BASE_LIB ops_base
+            PATHS ${ASCEND_CANN_PACKAGE_PATH}/${SYSTEM_PREFIX}/lib64
+                  ${ASCEND_CANN_PACKAGE_PATH}/lib64
+            NO_DEFAULT_PATH)
+        if(_CUST_OPS_BASE_LIB)
+            target_link_libraries(cust_opmaster PRIVATE "${_CUST_OPS_BASE_LIB}")
+        endif()
+    endif()
     set_target_properties(cust_opmaster PROPERTIES OUTPUT_NAME
             cust_opmaster_rt2.0
     )

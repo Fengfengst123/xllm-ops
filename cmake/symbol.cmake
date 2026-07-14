@@ -142,6 +142,17 @@ function(gen_cust_optiling_symbol)
     rt2_registry_static
     -Wl,--no-whole-archive
   )
+  # Ensure libops_base.so is linked even if the IMPORTED target opsbase is not
+  # visible in this scope (observed on CANN 9.1 where FindOPBASE creates the
+  # target in a different directory scope).
+  # Ensure libops_base.so is linked even if the IMPORTED target opsbase is not
+  # visible in this scope (observed on CANN 9.1 where FindOPBASE creates the
+  # target in a different directory scope).
+  if(DEFINED OPBASE_LIB_DIR AND EXISTS "${OPBASE_LIB_DIR}")
+    target_link_libraries(cust_opmaster PRIVATE "${OPBASE_LIB_DIR}")
+  elseif(TARGET opsbase)
+    target_link_libraries(cust_opmaster PRIVATE opsbase)
+  endif()
   target_link_directories(cust_opmaster
     PRIVATE
     ${ASCEND_DIR}/${SYSTEM_PREFIX}/lib64

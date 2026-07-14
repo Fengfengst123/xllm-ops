@@ -21,7 +21,6 @@
 #include "kernel_operator.h"
 #endif
 #include "kernel_tiling/kernel_tiling.h"
-#include "kernel_utils.h"
 
 #ifndef KERNEL_API
 #define KERNEL_API extern "C" __global__ __aicore__
@@ -57,20 +56,6 @@ __aicore__ inline constexpr uint32_t GetVRegSize()
     return AscendC::VECTOR_REG_WIDTH;
 #else
     return 256U;
-#endif
-}
-
-/**
- * Check whether the type is supported by atomic add for simd
- */
-template<typename T>
-__aicore__ inline constexpr bool IsSupportAtomicAddTypeSIMD()
-{
-#if __CCE_AICORE__ == 310
-    return ops::IsSame<T, float>::value || ops::IsSame<T, half>::value || ops::IsSame<T, int16_t>::value ||
-        ops::IsSame<T, int32_t>::value || ops::IsSame<T, int8_t>::value || ops::IsSame<T, bfloat16_t>::value;
-#else
-    return false;
 #endif
 }
 

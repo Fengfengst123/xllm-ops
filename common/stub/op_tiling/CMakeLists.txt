@@ -28,3 +28,9 @@ target_include_directories(optiling PRIVATE
 target_link_libraries(optiling PRIVATE
     $<BUILD_INTERFACE:dlog_headers>
 )
+
+# Link libops_base.so for Ops::Base::ToString(gert::Shape) used by tiling code.
+# On CANN 9.1 the IMPORTED target opsbase may not be visible in this scope.
+if(OPBASE_LIB_DIR)
+    target_link_libraries(optiling PRIVATE ${OPBASE_LIB_DIR})
+endif()
