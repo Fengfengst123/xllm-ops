@@ -32,4 +32,3 @@ index 98cefb432..872f03f26 100644
 +    ASSERT_EQ(*reinterpret_cast<const uint32_t*>(raw_tiling + 56), 1U);
      // dlog_setlevel(0, 3, 0);
  }
-

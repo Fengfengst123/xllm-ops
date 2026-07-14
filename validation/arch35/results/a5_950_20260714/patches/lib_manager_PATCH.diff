@@ -75,4 +75,3 @@
 +
          func.argtypes = arg_types
          func.restype = return_type
-
