@@ -1,0 +1,11 @@
+nodes:
+  - backend: pyaclnn
+    name: gamma_add_rms_norm
+    task: [performance_device]
+    devices: [0]
+    run_modes: []
+  - backend: npu
+    name: baseline
+    task: [performance_device]
+    devices: [0]
+    run_modes: []

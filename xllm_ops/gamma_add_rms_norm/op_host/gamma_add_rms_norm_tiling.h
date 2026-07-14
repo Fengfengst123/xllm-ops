@@ -15,6 +15,7 @@
 #include "register/op_impl_registry.h"
 #include "tiling/platform/platform_ascendc.h"
 #include "platform/platform_infos_def.h"
+#include "gamma_add_rms_norm_error_log.h"
 
 namespace optiling {
 BEGIN_TILING_DATA_DEF(GammaAddRMSNormTilingData)

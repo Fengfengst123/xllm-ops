@@ -1,0 +1,59 @@
+name: GammaAddRmsNorm
+aclnn_name: GammaAddRmsNorm
+api_type: aclnn_gamma_add_rms_norm
+aclnn_api_type: sample_aclnn_api
+generate: gamma_add_rms_norm_dynamic_perf
+dtype_numbers: 30
+extra_numbers: 0
+standard:
+  acc: double_benchmark
+  perf: not_key
+inputs:
+  - name: x1
+    type: tensor
+    dtypes:
+      values: [bf16]
+    ranges:
+      valid:
+        values: [[-1, 1]]
+    shapes:
+      dim_numbers:
+        values: [2, 3]
+      dim_values:
+        values: [1, 2, 4, 8, 16, 31, 64, 128, 256, 512, 1024, 2048, 4096, 5120, 7168, 8192]
+      max_length: 2621440
+  - name: x2
+    type: tensor
+    dtypes:
+      values: [bf16]
+    ranges:
+      valid:
+        values: [[-1, 1]]
+  - name: gamma
+    type: tensor
+    dtypes:
+      values: [bf16]
+    ranges:
+      valid:
+        values: [[-0.5, 0.5]]
+  - name: epsilon
+    type: attr
+    dtypes:
+      values: [double]
+    ranges:
+      valid:
+        values: [1.0e-6]
+  - name: addGammaOffset
+    type: attr
+    dtypes:
+      values: [bool]
+    ranges:
+      valid:
+        values: [true]
+  - name: kernelType
+    type: attr
+    dtypes:
+      values: [int8_t]
+    ranges:
+      valid:
+        values: [2]

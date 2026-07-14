@@ -18,6 +18,7 @@
 #include <iostream>
 #include "register/op_impl_registry.h"
 #include "gamma_add_rms_norm_tiling.h"
+#include "op_common/op_host/util/math_util.h"
 #include "op_common/op_host/util/platform_util.h"
 
 namespace optiling {
