@@ -287,6 +287,11 @@ elif [[ "$SOC_VERSION" =~ ^ascend910_93 ]]; then
     fi
     CUSTOM_OPS=$(IFS=';'; echo "${CUSTOM_OPS_ARRAY[*]}")
     SOC_ARG="ascend910_93"
+elif [[ "$SOC_VERSION" =~ ^ascend950 ]]; then
+    log "matched SOC branch: ascend950 (A5)"
+    CUSTOM_OPS_ARRAY=("gamma_add_rms_norm")
+    CUSTOM_OPS=$(IFS=';'; echo "${CUSTOM_OPS_ARRAY[*]}")
+    SOC_ARG="ascend950"
 else
     # others
     # currently, no custom aclnn ops for other series

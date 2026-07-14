@@ -41,7 +41,7 @@ ENABLE_BUILT_CUSTOM=FALSE
 ENABLE_STATIC=FALSE
 ENABLE_EXPERIMENTAL=FALSE
 ASCEND_SOC_UNITS="ascend910b"
-SUPPORT_COMPUTE_UNIT_SHORT=("ascend910b" "ascend910_93" "ascend910_95" "kirinx90")
+SUPPORT_COMPUTE_UNIT_SHORT=("ascend910b" "ascend910_93" "ascend950" "kirinx90")
 CMAKE_BUILD_MODE=""
 BUILD_TYPE=""
 VERSION=""
@@ -699,7 +699,6 @@ package_static() {
 
 function process_soc_input(){
     local input_string="$1"
-    input_string=$(echo "$input_string" | sed 's/ascend950/ascend910_95/g')
     local value_part="${input_string#*=}"
     ASCEND_SOC_UNITS="${value_part//,/;}"
 }
