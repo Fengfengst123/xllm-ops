@@ -16,7 +16,7 @@ index 98cefb432..872f03f26 100644
 +    ASSERT_EQ(*reinterpret_cast<const uint32_t*>(raw_tiling + 48), 1U);
      // dlog_setlevel(0, 3, 0);
  }
- 
+
 @@ -808,9 +810,12 @@ TEST_F(GammaAddRmsNormTiling, gamma_add_rms_norm_tiling_005)
      // todo check tiling result
      auto tiling_key = tiling_context->GetTilingKey();
@@ -32,4 +32,4 @@ index 98cefb432..872f03f26 100644
 +    ASSERT_EQ(*reinterpret_cast<const uint32_t*>(raw_tiling + 56), 1U);
      // dlog_setlevel(0, 3, 0);
  }
- 
+

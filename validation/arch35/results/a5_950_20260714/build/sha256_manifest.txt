@@ -1,0 +1,19 @@
+# SHA256 manifest for xllm-ops ascend950 build artifacts
+Build: 2026-07-14T13:29:03Z
+
+## .run package
+8f1a66077fd3f41966b4a621b3465da1e992039e0a792000d051d5bedd20ecb8  /workspace/build_gamma_a5/cann-ops-xllm-custom_linux-x86_64.run
+
+## Kernel binaries
+c5fc217ba6176196d5745f964b741be73acd4b20af5e71d68b88d387707b483b  /workspace/build_gamma_a5/binary/ascend950/bin/gamma_add_rms_norm_apt/GammaAddRmsNorm_1106d4daca8765f5bb4811fcb0614277.o
+738fe451298228c1415d4c25e3fa3d204090ad4e8746a9cd66511ecc3e994186  /workspace/build_gamma_a5/binary/ascend950/bin/gamma_add_rms_norm_apt/GammaAddRmsNorm_c549aa7cfbf8ccffe3b5fbc767e383f6.o
+7b5166e08bd6a0718d3b752e3f74ed6c2b67c82b38e9ea0a1ac09e44de110996  /workspace/build_gamma_a5/binary/ascend950/bin/gamma_add_rms_norm_apt/GammaAddRmsNorm_fd94913b5f28c2606574554b42dbd654.o
+
+## ACLNN op-api library
+1fcb24cac0f225a494c5fe4a00f1d4a56cc36a58e23d5971f5c396365f9a10b0  /workspace/build_gamma_a5/libcust_opapi.so
+
+## Installed artifacts
+1fcb24cac0f225a494c5fe4a00f1d4a56cc36a58e23d5971f5c396365f9a10b0  /usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math/op_api/lib/libcust_opapi.so
+c5fc217ba6176196d5745f964b741be73acd4b20af5e71d68b88d387707b483b  /usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math/op_impl/ai_core/tbe/kernel/ascend950/gamma_add_rms_norm_apt/GammaAddRmsNorm_1106d4daca8765f5bb4811fcb0614277.o
+738fe451298228c1415d4c25e3fa3d204090ad4e8746a9cd66511ecc3e994186  /usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math/op_impl/ai_core/tbe/kernel/ascend950/gamma_add_rms_norm_apt/GammaAddRmsNorm_c549aa7cfbf8ccffe3b5fbc767e383f6.o
+7b5166e08bd6a0718d3b752e3f74ed6c2b67c82b38e9ea0a1ac09e44de110996  /usr/local/Ascend/cann-9.1.0-beta.1/opp/vendors/custom_xllm_math/op_impl/ai_core/tbe/kernel/ascend950/gamma_add_rms_norm_apt/GammaAddRmsNorm_fd94913b5f28c2606574554b42dbd654.o

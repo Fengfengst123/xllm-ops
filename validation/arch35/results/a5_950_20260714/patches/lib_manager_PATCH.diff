@@ -2,13 +2,13 @@
 +++ /workspace/venv/lib/python3.12/site-packages/atk/tasks/backends/lib_interface/lib_manager.py	2026-07-14 07:04:33.665812588 +0000
 @@ -60,10 +60,53 @@
  """
- 
+
  import ctypes
 +import logging
  import os
  from typing import Any, Dict, List, Union
- 
- 
+
+
 +# --- A5 GammaAddRmsNorm custom-op-api fallback (venv-local ATK compat patch) ---
 +# Only these two symbols are allowed to fall back to GAMMA_OPAPI_LIB. Both must
 +# resolve from the SAME custom-library handle. Do not route any other ACLNN
@@ -57,7 +57,7 @@
 @@ -100,7 +143,20 @@
          if func_name in LibManager._func_bindings[self.lib_name]:
              return LibManager._func_bindings[self.lib_name][func_name]
- 
+
 -        func = getattr(LibManager._libs[self.lib_name], func_name)
 +        func = None
 +        try:
@@ -75,4 +75,4 @@
 +
          func.argtypes = arg_types
          func.restype = return_type
- 
+
